@@ -7,8 +7,7 @@
   "Likes": 0,
   "Year": 2008,
   "Favorites": "Hearted",
-  "Description": "Bitcoin is a cryptocurrency. It is a decentralized digital currency that is based on cryptography.
-  As such, it can operate without the need of a central authority like a central bank or a company."
+  "Description": "Bitcoin is a cryptocurrency. It is a decentralized digital currency that is based on cryptography.As such, it can operate without the need of a central authority like a central bank or a company."
 },
 {
 "Id": 2,
@@ -17,8 +16,7 @@
 "Likes": 0,
 "Year": 2013,
 "Favorites": "Hearted",
-"Description": "Originally formed as a joke, Dogecoin was created by IBM software engineer Billy Markus and Adobe software engineer Jackson Palmer. 
-They wanted to create a peer-to-peer digital currency that could reach a broader demographic than Bitcoin. In addition, they wanted to distance it from the controversial history of other coins."
+"Description": "Originally formed as a joke, Dogecoin was created by IBM software engineer Billy Markus and Adobe software engineer Jackson Palmer. They wanted to create a peer-to-peer digital currency that could reach a broader demographic than Bitcoin. In addition, they wanted to distance it from the controversial history of other coins."
 },
 {
 "Id": 3,
@@ -27,8 +25,5 @@ They wanted to create a peer-to-peer digital currency that could reach a broader
 "Likes": 0,
 "Year": 1964,
 "Favorites": "Hearted",
-"Description": "Ethereum was initially described in a white paper by Vitalik Buterin,a programmer and co-founder of Bitcoin Magazine, in late 2013
-with a goal of building decentralized applications. Buterin argued to the bitcoin core developers that Bitcoin and blockchain technology could benefit
-from other applications besides money and needed a more robust language for application development that could lead to attaching real-world assets, 
-such as stocks and property, to the blockchain."  
+"Description": "Ethereum was initially described in a white paper by Vitalik Buterin,a programmer and co-founder of Bitcoin Magazine, in late 2013 with a goal of building decentralized applications. Buterin argued to the bitcoin core developers that Bitcoin and blockchain technology could benefit from other applications besides money and needed a more robust language for application development that could lead to attaching real-world assets, such as stocks and property, to the blockchain."  
 }]} 
