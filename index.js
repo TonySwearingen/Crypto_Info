@@ -1,16 +1,20 @@
 function getCrypto(){
   fetch("http://localhost:3000/Crypto")
   .then(res => res.json())
-  .then(cryptoArray => console.log(cryptoArray))
+  .then(cryptoArray => buildCrypto(cryptoArray))
 }
 getCrypto()
 
-const 
-function buildCrypto(){
-  cryptoArray.array.forEach(cryptoObj => {
-  const cryptoObj = document.createElement()
+  const crypto = document.querySelector("#crypto")   
+function buildCrypto(cryptoArray){
+  
+  cryptoArray.forEach(cryptoObj => {
+  const cryptoLi = document.createElement("li")
+  cryptoLi.textContent = cryptoObj.crypto
+  const cryptoImg = document.createElement("img")
+  console.log(cryptoImg)
   cryptoImg.src = cryptoObj.image
 
   });
-    console.log(hello)
+    
 }
