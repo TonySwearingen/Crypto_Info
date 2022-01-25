@@ -1,0 +1,29 @@
+ {
+   "Crypto":[
+    {
+  "Id": 1,
+  "Name": "BTC",
+  "Image": "https://tse2.mm.bing.net/th?id=OIP.Ri1ro2UKZVO3IGJQzrQk_QHaEu&pid=Api&P=0&w=298&h=190",
+  "Likes": 0,
+  "Year": 2008,
+  "Favorites": "Hearted",
+  "Description": "Bitcoin is a cryptocurrency. It is a decentralized digital currency that is based on cryptography.As such, it can operate without the need of a central authority like a central bank or a company."
+},
+{
+"Id": 2,
+"Name": "DOGE",
+"Image": "https://tse1.mm.bing.net/th?id=OIP.r2iVXxIS-CEmaWpADohakgHaE8&pid=Api&P=0&w=261&h=174",
+"Likes": 0,
+"Year": 2013,
+"Favorites": "Hearted",
+"Description": "Originally formed as a joke, Dogecoin was created by IBM software engineer Billy Markus and Adobe software engineer Jackson Palmer. They wanted to create a peer-to-peer digital currency that could reach a broader demographic than Bitcoin. In addition, they wanted to distance it from the controversial history of other coins."
+},
+{
+"Id": 3,
+"Name": "Ethereum",
+"Image": "https://tse2.mm.bing.net/th?id=OIP.30FwEoSo-SLFOWlE6jzEVgHaHa&pid=Api&P=0&w=167&h=167",
+"Likes": 0,
+"Year": 1964,
+"Favorites": "Hearted",
+"Description": "Ethereum was initially described in a white paper by Vitalik Buterin,a programmer and co-founder of Bitcoin Magazine, in late 2013 with a goal of building decentralized applications. Buterin argued to the bitcoin core developers that Bitcoin and blockchain technology could benefit from other applications besides money and needed a more robust language for application development that could lead to attaching real-world assets, such as stocks and property, to the blockchain."  
+}]} 
