@@ -3,29 +3,35 @@ getCrypto()
 function getCrypto() {
   fetch("http://localhost:3000/Crypto")
   .then(res => res.json())
-  .then(cryptoArray => console.log(cryptoArray))
+  .then(cryptoArray => buildCrypto(cryptoArray))
 }
 
 
- const crypto = document.querySelector("#crypto")
+//  const crypto = document.querySelector("#crypto")
 
 
-function buildCrypto(cryptoArray) {
-    cryptoObj.message.forEach(cryptoMessage => {
-        const cryptoObj = document.createElement('img')
-        cryptoObj.src = cryptoMessage
-    
-    })  
-//   cryptoArray.forEach(cryptoObj => {
-
-//   const cryptoLi = document.createElement("li")
-//   cryptoLi.textContent = cryptoObj.crypto
-
-// //   const cryptoImg = document.createElement("img")
-// //   cryptoImg.src = cryptoObj.image
+function buildCrypto(cryptos) {
+  let ul = document.querySelector('#crypto');
+  let li =document.createElement('li');
+  li.innerText = cryptos;
+  ul.appendChild(li);
+  
   
 
-//   });
-    
+
+//  console.log("getCrypto")
+//     // cryptoObj.message.forEach(cryptoMessage => {
+//     //     const cryptoObj = document.createElement('img')
+//     //     cryptoObj.src = cryptoMessage
+
+// const cryptoObj2 = document.createDocumentFragment();
+// for (let name of name) {
+//   const li = document.createElement('li');
+//   li.textContent = name;
+//   cryptoObj2.appendChild(li);
 // }
-}
+// const container = document.querySelector("#crypto");
+// container.appendChild(cryptoObj);
+} 
+
+
