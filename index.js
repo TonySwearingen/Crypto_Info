@@ -21,6 +21,8 @@ function buildCrypto(cryptos) {
   console.log(Img);
   let li = document.createElement('li');
   li.innerText = cryptos.Name;
+  Img.style.maxWidth = '150px';
+  Img.style.maxHeight = '200px'
   ul.appendChild(li);
   ul.appendChild(Img);
  
