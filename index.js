@@ -55,7 +55,11 @@ document.querySelector('#crypto').append(btn)
 }
 
 function handleLike() {
-  
+  let iSpan = document.querySelector('#span-span-')
+  let number = parseInt(iSpan.textContent)
+  let newNum = number + 1
+  iSpan.textContent = newNum
+  console.log(newNum)
 }
 
 
