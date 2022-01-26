@@ -7,38 +7,28 @@ function getCrypto() {
     console.log(cryptoArray);
     cryptoArray.forEach(crypto => buildCrypto(crypto))})
   }
-  
-  //const cryptoObj = JSON.parse(cryptoObj)
 
-
-
-//  const crypto = document.querySelector("#crypto")
 
 function buildCrypto(cryptos) {
   let ul = document.querySelector('#crypto');
   let Img = document.createElement('img'); 
   Img.src = cryptos.Image; 
-  console.log(Img);
   let li = document.createElement('li');
   li.innerText = cryptos.Name;
   Img.style.maxWidth = '150px';
-  Img.style.maxHeight = '200px'
+  Img.style.maxHeight = '120px'
   ul.appendChild(li);
   ul.appendChild(Img);
- 
   
-
-//  console.log("getCrypto")
-//     // cryptoObj.message.forEach(cryptoMessage => {
-//     //     const cryptoObj = document.createElement('img')
-//     //     cryptoObj.src = cryptoMessage
-
-// const cryptoObj2 = document.createDocumentFragment();
-// for (let name of name) {
-//   const li = document.createElement('li');
-//   li.textContent = name;
-//   cryptoObj2.appendChild(li);
-// }
-// const container = document.querySelector("#crypto");
-// container.appendChild(cryptoObj);
 }
+
+function coinImg(){
+let coinImg = document.getElementById('img');
+coinImg.addEventListener("mouseover", function(e) {
+  e.target.style.color = "grey";
+  setTimeout(function() {
+    e.target.style.color = "";
+    }, 1000);
+ false;
+  })}
+coinImg()
