@@ -3,21 +3,22 @@ getCrypto()
 function getCrypto() {
   fetch("http://localhost:3000/Crypto")
   .then(res => res.json())
-  .then(cryptoArray => buildCrypto(cryptoArray))
-}
+  .then(cryptoArray => {
+    console.log(cryptoArray);
+    cryptoArray.forEach(crypto => buildCrypto(crypto))})
+  }
+  
+  //const cryptoObj = JSON.parse(cryptoObj)
+
 
 
 //  const crypto = document.querySelector("#crypto")
 
-
 function buildCrypto(cryptos) {
   let ul = document.querySelector('#crypto');
   let li =document.createElement('li');
-  li.innerText = cryptos;
+  li.innerText = cryptos.Name;
   ul.appendChild(li);
-  
-  
-
 
 //  console.log("getCrypto")
 //     // cryptoObj.message.forEach(cryptoMessage => {
@@ -32,6 +33,4 @@ function buildCrypto(cryptos) {
 // }
 // const container = document.querySelector("#crypto");
 // container.appendChild(cryptoObj);
-} 
-
-
+}
