@@ -41,7 +41,7 @@ function buildCrypto(cryptos) {
   // add event to favorite crypto aka change the favorit key to true
 
 
-  coinDiv.append(img, li, li2, span, btn)
+  coinDiv.append(li, li2,img,btn, span)
 
   
   coinDiv.title = cryptos.Description
