@@ -16,9 +16,15 @@ function getCrypto() {
 
 function buildCrypto(cryptos) {
   let ul = document.querySelector('#crypto');
-  let li =document.createElement('li');
+  let Img = document.createElement('img'); 
+  Img.src = cryptos.Image; 
+  console.log(Img);
+  let li = document.createElement('li');
   li.innerText = cryptos.Name;
   ul.appendChild(li);
+  ul.appendChild(Img);
+ 
+  
 
 //  console.log("getCrypto")
 //     // cryptoObj.message.forEach(cryptoMessage => {
