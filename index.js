@@ -14,7 +14,8 @@ function buildCrypto(cryptos) {
 
   let coinDiv = document.createElement('div')
   let span = document.createElement('span')
-  let img = document.createElement('img');
+  let img = document.createElement('img')
+  let iSpan = document.getElementsByTagName('span')
 
   img.src = cryptos.Image;
   img.style.maxWidth = '150px';
@@ -26,8 +27,10 @@ function buildCrypto(cryptos) {
   let li2 = document.createElement('li');
   li2.textContent = cryptos.Year;
 
-  console.log(span)
+  for (let i = 0; i < iSpan.length; i++)
+  iSpan[i].id = 'span-' + iSpan[i].id;
  
+  
   buildCryptoBtn()
 
   coinDiv.append(img, li, li2, span)
