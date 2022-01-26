@@ -15,7 +15,10 @@ function buildCrypto(cryptos) {
   let coinDiv = document.createElement('div')
   let span = document.createElement('span')
   let img = document.createElement('img')
-  let iSpan = document.getElementsByTagName('span')
+  
+  let btn = document.createElement("button")
+  btn.addEventListener('click', handleLike)
+  btn.textContent = 'like'
 
   img.src = cryptos.Image;
   img.style.maxWidth = '150px';
@@ -27,13 +30,18 @@ function buildCrypto(cryptos) {
   let li2 = document.createElement('li');
   li2.textContent = cryptos.Year;
 
-  for (let i = 0; i < iSpan.length; i++)
-  iSpan[i].id = 'span-' + iSpan[i].id;
- 
-  
-  buildCryptoBtn()
+  span.textContent = cryptos.Likes
+  span.className = "like-span"
 
-  coinDiv.append(img, li, li2, span)
+  // conditional (if statment) to check if cryptos.Likes
+  // build some html button with heart "❤️" or a button that says "liked"
+  // add click event to unfavorit 
+  // else
+  // cretate different hml button "❌"
+  // add event to favorite crypto aka change the favorit key to true
+
+
+  coinDiv.append(img, li, li2, span, btn)
 
   
   coinDiv.title = cryptos.Description
@@ -42,26 +50,31 @@ function buildCrypto(cryptos) {
   
 }
 
-function buildCryptoBtn(element) {
 
+function handleLike(e) {
 
-let btn = document.createElement("button")
-btn.addEventListener('click', handleLike)
-btn.textContent = 'like'
-
-
-document.querySelector('#crypto').append(btn)
-
-}
-
-function handleLike() {
-  let iSpan = document.querySelector('#span-span-')
+  let iSpan = e.target.parentElement.querySelector('.like-span')
   let number = parseInt(iSpan.textContent)
-  let newNum = number + 1
+
+  let newNum =  number + 1
   iSpan.textContent = newNum
-  console.log(newNum)
+  
 }
 
+const cryptoForm = document.querySelector('#newCrypto')
+cryptoForm.addEventListener('submit', addCryptoToPage)
 
+function addCryptoToPage(e) {
+  e.preventDefault()
 
+  let newCoin = {
+    Name: e.target.name.value,
+    Image: e.target.image.value,
+    Description: e.target.description.value,
+    Year: e.target.year.value,
+    Likes: 0
+  }
+  buildCrypto(newCoin)
+}
+console.log(newCoin)
 
