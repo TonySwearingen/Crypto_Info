@@ -20,7 +20,11 @@ function buildCrypto(cryptos) {
   
   let btn = document.createElement("button")
   btn.addEventListener('click', handleLike)
-  btn.textContent = 'like'
+  btn.textContent = 'Like'
+
+  let btn2 = document.createElement('button')
+  btn2.addEventListener('click', handleLike2)
+  btn2.textContent = '🖤'
 
   img.src = cryptos.Image;
   img.style.maxWidth = '150px';
@@ -40,7 +44,7 @@ function buildCrypto(cryptos) {
   span2.textContent = cryptos.Favorites
   span2.className = "fav-span"
   
-
+  
   // conditional (if statement) to check if cryptos.Likes
   // build some html button with heart "❤️" or a button that says "liked"
   // add click event to unfavorite 
@@ -51,7 +55,7 @@ function buildCrypto(cryptos) {
 
   coinDiv.append(li,li2,img,btn,span,footer)
   footer.append(li3)
-  li3.append(span2)
+  li3.append(span2, btn2)
   
   
   coinDiv.title = cryptos.Description
@@ -60,6 +64,10 @@ function buildCrypto(cryptos) {
   
 }
 
+function handleLike2(e, heart){
+  iSpan2 = e.target.parentElement.querySelector('.fav-span')
+  
+}
 
 function handleLike(e) {
 
@@ -97,7 +105,6 @@ function likeCallback(e) {
   const heart = e.target;
   getCrypto("")
     .then(function(){
-
       if ( heart.innerText === EMPTY_HEART) {
         heart.innerText = FULL_HEART;
         heart.className = "activated-heart";
@@ -105,19 +112,11 @@ function likeCallback(e) {
         heart.innerText = EMPTY_HEART;
         heart.className = "";
       }
+     
 const articleHearts = e.target.parentElement.querySelector(".fav-span"); 
 for (const glyph of articleHearts) {
   glyph.addEventListener("click", likeCallback);
 }
 
     })
-    
-    // .catch(function(error) {
-    //   const modal = document.getElementById("modal");
-    //   modal.className = "";
-    //   modal.innerText = error;
-    //   setTimeout(() =>  modal.className = "hidden", 3000);
-    // });
   }
-
-  console.log(likeCallback)
