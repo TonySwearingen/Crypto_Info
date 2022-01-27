@@ -24,7 +24,8 @@ function buildCrypto(cryptos) {
 
   let btn2 = document.createElement('button')
   btn2.addEventListener('click', handleLike2)
-  btn2.textContent = '🖤'
+  btn2.textContent = EMPTY_HEART
+  btn2.id = 'heart'
 
   img.src = cryptos.Image;
   img.style.maxWidth = '150px';
@@ -64,9 +65,16 @@ function buildCrypto(cryptos) {
   
 }
 
-function handleLike2(e, heart){
+function handleLike2(e){
   iSpan2 = e.target.parentElement.querySelector('.fav-span')
-  
+  const heart = document.querySelector('#heart')
+       if ( heart.innerText === EMPTY_HEART) {
+        heart.innerText = FULL_HEART;
+        // heart.className = "activated-heart";
+      } else {
+        heart.innerText = EMPTY_HEART;
+        // heart.className = "";
+      }
 }
 
 function handleLike(e) {
@@ -84,6 +92,14 @@ cryptoForm.addEventListener('submit', addCryptoToPage)
 
 function addCryptoToPage(e) {
   e.preventDefault()
+  
+  const onSubmit = (data) => {
+    if (data) {
+      axios.post(url, data);
+    }
+    cryptoForm.reset()
+  }
+onSubmit()
 
   let newCoin = {
     Name: e.target.name.value,
@@ -94,29 +110,8 @@ function addCryptoToPage(e) {
   }
   buildCrypto(newCoin)
 }
-//console.log(newCoin)
+
 
 const EMPTY_HEART = "🖤"
 const FULL_HEART = "💚"
 
-
-
-function likeCallback(e) {
-  const heart = e.target;
-  getCrypto("")
-    .then(function(){
-      if ( heart.innerText === EMPTY_HEART) {
-        heart.innerText = FULL_HEART;
-        heart.className = "activated-heart";
-      } else {
-        heart.innerText = EMPTY_HEART;
-        heart.className = "";
-      }
-     
-const articleHearts = e.target.parentElement.querySelector(".fav-span"); 
-for (const glyph of articleHearts) {
-  glyph.addEventListener("click", likeCallback);
-}
-
-    })
-  }
