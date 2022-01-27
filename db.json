@@ -35,5 +35,25 @@
   "Year": 2021,
   "Favorites": "",
   "Description": "A new crypto coin created by people who work in the research and science community, Robo Inu ($RBIF) is inspired by the idea of NASA’s ambitious plan to launch Robo-dogs to Mars."  
+  },
+  
+{
+  "Id": 5,
+  "Name": "Polkadot",
+  "Image": "https://tse1.mm.bing.net/th?id=OIP.4R8Pi3qBhVNNt4e-h6GL3AHaD1&pid=Api&P=0&w=340&h=176",
+  "Likes": 0,
+  "Year": 2017,
+  "Favorites": "",
+  "Description": "Polkadot is a platform that allows diverse blockchains to transfer messages, including value, in a trust-free fashion; sharing their unique features while pooling their security. In brief, Polkadot is a scalable heterogeneous multi-chain technology."  
+  },
+   
+{
+  "Id": 6,
+  "Name": "Shiba Inu",
+  "Image": "https://tse3.mm.bing.net/th?id=OIP.GxZivEXgBKAUnEva9S6BRwHaE8&pid=Api&P=0&w=275&h=183",
+  "Likes": 0,
+  "Year": 2020,
+  "Favorites": "",
+  "Description": "Shiba Inu token is a decentralized cryptocurrency created in August 2020 by an anonymous person or group known as 'Ryoshi'. It is named after the Shiba Inu (柴犬), a Japanese breed of dog originating in the Chūbu region, the same breed that is depicted in Dogecoin's symbol, itself originally a satirical cryptocurrency based on the Doge meme."  
   }
 ]} 
