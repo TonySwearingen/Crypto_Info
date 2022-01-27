@@ -68,7 +68,7 @@ function buildCrypto(cryptos) {
 function handleLike2(e){
   iSpan2 = e.target.parentElement.querySelector('.fav-span')
   const heart = e.target.parentElement.querySelector('#heart')
-       if ( heart.innerText === EMPTY_HEART) {
+      if ( heart.innerText === EMPTY_HEART) {
         heart.innerText = FULL_HEART;
         // heart.className = "activated-heart";
       } else {
