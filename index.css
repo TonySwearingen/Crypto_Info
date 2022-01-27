@@ -1,8 +1,8 @@
-div#cryptoHeader p {
+div#cryptoHeader p.header {
   font-weight:bold;
-  font-size:150px
-
-} 
-background image {
-
+  font-size:30px;
+  color:green;
+}
+{
+  border:1px solid black
 }
