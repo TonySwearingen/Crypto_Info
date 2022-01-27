@@ -14,7 +14,9 @@ function buildCrypto(cryptos) {
 
   let coinDiv = document.createElement('div')
   let span = document.createElement('span')
+  let span2 = document.createElement('span')
   let img = document.createElement('img')
+  let footer = document.createElement('footer')
   
   let btn = document.createElement("button")
   btn.addEventListener('click', handleLike)
@@ -30,19 +32,27 @@ function buildCrypto(cryptos) {
   let li2 = document.createElement('li');
   li2.textContent = cryptos.Year;
 
+  let li3 =document.createElement('li')
+  li3.textContent = cryptos.Footer;
+
   span.textContent = cryptos.Likes
   span.className = "like-span"
+  span2.textContent = cryptos.Favorites
+  span2.className = "fav-span"
+  
 
-  // conditional (if statment) to check if cryptos.Likes
+  // conditional (if statement) to check if cryptos.Likes
   // build some html button with heart "❤️" or a button that says "liked"
-  // add click event to unfavorit 
+  // add click event to unfavorite 
   // else
-  // cretate different hml button "❌"
-  // add event to favorite crypto aka change the favorit key to true
+  // create different hml button "❌"
+  // add event to favorite crypto aka change the favorite key to true
 
 
-  coinDiv.append(li, li2,img,btn, span)
-
+  coinDiv.append(li,li2,img,btn,span,footer)
+  footer.append(li3)
+  li3.append(span2)
+  
   
   coinDiv.title = cryptos.Description
    
@@ -76,5 +86,34 @@ function addCryptoToPage(e) {
   }
   buildCrypto(newCoin)
 }
-console.log(newCoin)
+//console.log(newCoin)
+
+const EMPTY_HEART = "🖤"
+const FULL_HEART = "💚"
+
+
+
+function likeCallback(e) {
+  const heart = e.target;
+  mimicServerCall("bogusUrl")
+    .then(function(){
+      if ( heart.innerText === EMPTY_HEART) {
+        heart.innerText = FULL_HEART;
+        heart.className = "activated-heart";
+      } else {
+        heart.innerText = EMPTY_HEART;
+        heart.className = "";
+      }
+const articleHearts = e.target.parentElement.querySelector(".fav-span"); 
+for (const glyph of articleHearts) {
+  glyph.addEventListener("click", likeCallback);
+}
+    })
+    .catch(function(error) {
+      const modal = document.getElementById("modal");
+      modal.className = "";
+      modal.innerText = error;
+      setTimeout(() =>  modal.className = "hidden", 3000);
+    });
+  }
 
