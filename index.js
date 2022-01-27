@@ -56,7 +56,7 @@ function buildCrypto(cryptos) {
 
   coinDiv.append(li,li2,img,btn,span,footer)
   footer.append(li3)
-  li3.append(span2, btn2)
+  li3.append(btn2,span2)
   
   
   coinDiv.title = cryptos.Description
