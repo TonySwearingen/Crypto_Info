@@ -95,8 +95,9 @@ const FULL_HEART = "💚"
 
 function likeCallback(e) {
   const heart = e.target;
-  mimicServerCall("bogusUrl")
+  getCrypto("")
     .then(function(){
+
       if ( heart.innerText === EMPTY_HEART) {
         heart.innerText = FULL_HEART;
         heart.className = "activated-heart";
@@ -108,12 +109,15 @@ const articleHearts = e.target.parentElement.querySelector(".fav-span");
 for (const glyph of articleHearts) {
   glyph.addEventListener("click", likeCallback);
 }
+
     })
-    .catch(function(error) {
-      const modal = document.getElementById("modal");
-      modal.className = "";
-      modal.innerText = error;
-      setTimeout(() =>  modal.className = "hidden", 3000);
-    });
+    
+    // .catch(function(error) {
+    //   const modal = document.getElementById("modal");
+    //   modal.className = "";
+    //   modal.innerText = error;
+    //   setTimeout(() =>  modal.className = "hidden", 3000);
+    // });
   }
 
+  console.log(likeCallback)
