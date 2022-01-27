@@ -36,11 +36,11 @@ function buildCrypto(cryptos) {
 
   let li2 = document.createElement('li');
   li2.textContent = cryptos.Year;
-
+      
   let li3 =document.createElement('li')
   li3.textContent = cryptos.Footer;
 
-  span.textContent = cryptos.Likes
+  span.textContent = cryptos.Likes                                    
   span.className = "like-span"
   span2.textContent = cryptos.Favorites
   span2.className = "fav-span"
