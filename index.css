@@ -2,7 +2,14 @@ div#cryptoHeader p.header {
   font-weight:bold;
   font-size:30px;
   color:green;
+/* }
+background-image: (){
+
+} */}
+#crypto img {
+border:3px solid red
+
 }
-{
-  border:1px solid black
+#crypto {
+  border:3px solid black
 }

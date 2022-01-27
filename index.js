@@ -27,9 +27,9 @@ function buildCrypto(cryptos) {
   btn2.textContent = EMPTY_HEART
   btn2.id = 'heart'
 
-  img.src = cryptos.Image;
-  img.style.maxWidth = '150px';
-  img.style.maxHeight = '120px';
+   img.src = cryptos.Image;
+  // img.style.maxWidth = '150px';
+  // img.style.maxHeight = '120px';
 
   let li = document.createElement('li');
   li.innerText = cryptos.Name;
