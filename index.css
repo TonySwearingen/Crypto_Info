@@ -1,6 +1,6 @@
 #coin1 {
-    background-image: url('https://tse1.mm.bing.net/th?id=OIP.lqys-03A6kJPYQWILDNcGAHaE8&pid=Api&P=0&w=254&h=169')
-
+    background-image: url('https://tse1.mm.bing.net/th?id=OIP.lqys-03A6kJPYQWILDNcGAHaE8&pid=Api&P=0&w=9254&h=9169');
+    
 }
 
 #overview {
@@ -10,7 +10,7 @@
 
 div#cryptoHeader p.header {
   font-weight:bold;
-  font-size:30px;
+  font-size:50px;
   color:green;
 }
 #crypto img {
@@ -18,9 +18,56 @@ border:3px solid rgb(252, 34, 5)
 
 }
 #crypto {
-  border:3px solid black
-  
+  border:3px solid black;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
-/* https://tse1.mm.bing.net/th?id=OIP.lqys-03A6kJPYQWILDNcGAHaE8&pid=Api&P=0&w=254&h=169 */
+
+#coin4  {
+  font-size: 20px;
+  font-weight: bold;
+  font-style:oblique
+} 
+#subHeader {
+  font-size: 35px;
+  text-align: center;
+}
+
+#newCrypto {
+  border: 3px solid black;
+  font-weight: bold;
+padding: 10px;
+margin: auto;
+}
+
+.editForm {
+  display: inline-block;
+  border: 1px solid red;
+  padding: center;
+  margin: auto;
+}
+
+.editForm2 { 
+  border: 2px solid black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /*https://tse1.mm.bing.net/th?id=OIP.lqys-03A6kJPYQWILDNcGAHaE8&pid=Api&P=0&w=254&h=169 */
 
 /* https://tse1.mm.bing.net/th?id=OIP.Xgc2KbQ7fHwkI16z7dSamQHaLW&pid=Api&P=0&w=101&h=156 */

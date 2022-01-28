@@ -7,7 +7,7 @@
     <title>Document</title>
     <style>
         .Header>p {
-            height: 40px;
+            height: 80px;
            text-align: center;
            background-color: black;
               color: green;           
@@ -23,7 +23,7 @@
 <body id="overview">
     <div id ="cryptoHeader" class="Header">
         <p class="header">CRYPTO INFO</p>
-        <h3>Feel free to hover over the images to see a description of each cryptocurrency! </h1>
+        <h3 id=subHeader>Feel free to hover over the images to see a description of each cryptocurrency and add your own coin at the bottom of the page.</h3>! </h1>
     </div>
     <ul id="crypto">
         
@@ -31,11 +31,11 @@
     <section>
         <form id="newCrypto">
             <label for="searchByCoin">Add a Coin</label>
-            <input name="name" id="addCoin" type="text" placeholder="Coin"/>
-            <input name="image" id="imageCoin" type="text" placeholder="Image URL"/>
-            <input name="description" id="coinDescription" type="text" placeholder="Description"/>
-            <input name="year" id="year" type="text" placeholder="Year Made"/>
-            <input type="submit" />
+            <input class="editForm" name="name" id="addCoin" type="text" placeholder="Coin"/>
+            <input class="editForm" name="image" id="imageCoin" type="text" placeholder="Image URL"/>
+            <input class="editForm" name="description" id="coinDescription" type="text" placeholder="Description"/>
+            <input class="editForm" name="year" id="year" type="text" placeholder="Year Made"/>
+            <input class="editForm2" type="submit" />
         </form>
     </section>
 </body>
