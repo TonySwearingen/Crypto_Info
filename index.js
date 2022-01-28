@@ -93,14 +93,6 @@ cryptoForm.addEventListener('submit', addCryptoToPage)
 function addCryptoToPage(e) {
   e.preventDefault()
 
-//   const onSubmit = (data) => {
-//     if (data) {
-//       axios.post(url, data);
-//     }
-//     cryptoForm.reset()
-//   }
-// onSubmit()
-
   let newCoin = {
     Name: e.target.name.value,
     Image: e.target.image.value,
