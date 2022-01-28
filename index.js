@@ -107,7 +107,9 @@ function addCryptoToPage(e) {
     Description: e.target.description.value,
     Year: e.target.year.value,
     Likes: 0
-  }
+}
+  e.target.reset()
+  
   buildCrypto(newCoin)
 }
 
