@@ -37,15 +37,14 @@ border:3px solid rgb(252, 34, 5)
 #newCrypto {
   border: 3px solid black;
   font-weight: bold;
-padding: 10px;
-margin: auto;
+  padding: 10px;
 }
 
 .editForm {
   display: inline-block;
   border: 1px solid red;
   padding: center;
-  margin: auto;
+  margin: 30px;
 }
 
 .editForm2 { 
